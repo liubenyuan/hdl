@@ -52,6 +52,7 @@ xgui
 *_INFO.txt
 *_dump.txt
 db
+bd
 *.asm.rpt
 *.done
 *.eda.rpt

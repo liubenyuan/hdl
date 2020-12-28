@@ -107,6 +107,11 @@ proc adi_project {project_name {mode 0} {parameter_list {}} } {
     set p_board [lindex [lsearch -all -inline [get_board_parts] *zc706*] end]
     set sys_zynq 1
   }
+  if [regexp "_ar902$" $project_name] {
+    set p_device "xc7z100ffg900-2"
+    set p_board [lindex [lsearch -all -inline [get_board_parts] *ar902*] end]
+    set sys_zynq 1
+  }
   if [regexp "_mitx045$" $project_name] {
     set p_device "xc7z045ffg900-2"
     set p_board "not-applicable"
